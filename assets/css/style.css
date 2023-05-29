@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    caret-color: transparent;
+    overflow-x: hidden;
+}
+
+.body-color{
+    display: none;
+    position: absolute;
+    z-index: 998;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+.bar{
+    background-color: #117050;
+    height: 22px;
+    width: 168px;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 90px; /*ou pode usar 90px*/
+    line-height: 100px;
+    margin-bottom: 40px;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 40px; /*ou pode usar 90px*/
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.button{
+    display: inline-block;
+    border: 2px solid #454545;
+    padding: 10px 30px;
+    border-radius: 3px;
+    color: #454545;
+    text-decoration: none;
+}
+
+.button:hover{
+    color: #ffffff;
+    background-color: #454545;
+}
+
+header .line{
+    background-color: #117050;
+    height: 10px;
+}
+
+.menu-suspenso{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 90px;
+}
+
+.menu-suspenso a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.header--area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header--left img{
+    height: 64px;
+    width: 64px;
+}
+
+.header--right{
+    display: flex;
+    align-items: center;
+}
+.header--search form{
+    border: 1px solid #b3b3b3;
+    display: flex;
+}
+.header--search input{
+    font-size: 16px;
+    padding: 10px 10px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+}
+
+input[type="text"]{
+    caret-color: #000000;
+}
+.header--search button{
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.header--search img{
+    height: 16px;
+    width: 16px;
+}
+
+
+.header--menu i{
+    font-size: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.banner{
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 90px;
+}
+
+.banner--images{
+    display: flex;
+    margin-top: 60px;
+}
+.banner--images img{
+    width: 150px;
+    height: 150px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.area1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area1--content{
+    padding: 80px;
+}
+
+.area1--img1{
+    height: 350px;
+    background-image: url("../img/f2.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.area1--quote{
+    margin-bottom: 30px;
+}
+
+.area1--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area1--img2{
+    background-image: url("../img/f1.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.area2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area2--content{
+    padding: 80px;
+}
+
+.area2--img1{
+    height: 350px;
+    background-image: url("../img/f4.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.area2--quote{
+    margin-bottom: 30px;
+}
+
+.area2--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area2--img2{
+    background-image: url("../img/f3.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+
+.area3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area3--content{
+    padding: 300px 80px;
+    background-image: url("../img/bg2.jpg");
+    background-position: left;
+    background-size: cover;
+}
+
+.area3--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area3--img1{
+    background-image: url("../img/f5.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.area4{
+    background-color: #e8e9ee;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+
+.area4--content{
+    padding: 150px 80px;
+}
+
+.area4--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area4--img1{
+    background-image: url("../img/bg3.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.area5{
+    background-image: url("../img/bg4.jpg");
+    background-position: right;
+    background-size: cover;
+    height: 600px;
+}
+
+footer{
+    background-color: #333333;
+    color: #ffffff;
+    padding: 80px;
+    text-align: center;
+    line-height: 30px;
+}
+
+footer a{
+    color: #7ec0f3;
+}
+
+footer a:hover{
+    text-decoration: none;
+}
+
+@media (min-width: 769px) and (max-width:1140px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .banner--images img {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 426px) and (max-width:768px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .banner--images{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner--images img{
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+
+    .area1{
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2{
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area3{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media(max-width:425px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .header--menu{
+        margin-left: 20px;
+    }
+    .header--search input{
+        max-width: 100px;
+    }
+
+    .banner{
+        padding: 40px;
+    }
+
+    .banner--images{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner--images img{
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+
+    .area1,
+    .area2,
+    .area3,
+    .area4,
+    .area5{
+        grid-template-columns: 1fr;
+    }
+
+    .area1--content,
+    .area2--content,
+    .area3--content
+    .area4--content{
+        padding: 40px;
+    }
+
+    .area5{
+        height: 200px;
+    }
+
+    footer{
+        font-size: 13px;
+        padding: 40px 20px;
+    }
+}

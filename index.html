@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome/css/all.min.css">
+
+    <script type="text/javascript">
+        window.onload = function(){
+            var menuSuspenso = document.querySelector(".menu-suspenso");
+            var headerMenu = document.querySelector(".header--menu2");
+            var bgcolor = document.querySelector(".body-color");
+
+            headerMenu.addEventListener("click", function(){
+            if(menuSuspenso.style.display === 'none'){
+                menuSuspenso.style.display = 'flex';
+                bgcolor.style.display = 'flex';
+                bgcolor.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+                document.body.style.overflow = "hidden";
+
+            }
+            else{
+                menuSuspenso.style.display = 'none';
+                bgcolor.style.display = 'none';
+                bgcolor.style.backgroundColor = 'transparent';
+                document.body.style.overflow = "auto";
+            }
+        });
+        
+        document.addEventListener("click", function(event){
+            var targetElement = event.target; // Elemento clicado
+
+            // Verifica se o clique ocorreu fora do menu suspenso e do header do menu
+            if (!menuSuspenso.contains(targetElement) && targetElement !== headerMenu) {
+                menuSuspenso.style.display = 'none';
+                bgcolor.style.display = 'none';
+                bgcolor.style.backgroundColor = 'transparent';
+                document.body.style.overflow = "auto";
+            }
+        });
+    };
+    </script>
+</head>
+<body>
+    <div class="body-color"></div>
+    <header>
+        <div class="menu-suspenso">
+            <a href="index.html">Page 1</a>
+        </div>
+        <div class="line"></div>
+        <div class="container header--area">
+            <div class="header--left">
+                <a href="/"><img src="assets/img/logo.png" alt="Starbucks"></a>
+            </div>
+            <div class="header--right">
+                <div class="header--search">
+                    <form>
+                        <input type="text" name="search" placeholder="Search">
+                        <button>
+                            <img src="assets/img/loupe.png">
+                         </button>
+                    </form>
+                </div>
+                <div class="header--menu">
+                    <i class="fa-solid fa-bars header--menu2"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h1>Starbucks®<br/>Happy Hour</h1>
+            <span>We'll meet you in your inbox. Drink deals are on their way</span>
+            <div class="banner--images">
+                <img src="assets/img/c1.jpg">
+                <img src="assets/img/c2.jpg" alt="">
+                <img src="assets/img/c3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="area1">
+        <div class="area1--content">
+            <div class="bar"></div>
+            <h2>Four Drinks, A Million<br/> Reasons</h2>
+            <div class="area1--quote"> <em>"Just love yourself and you're set." – Lady Gaga</em></div>
+            <div class="area1--text">
+                Lady Gaga and Starbucks share a mission: to build a kinder, braver world. Through the Born This Way Foundation, Lady Gaga has inspired her fans to embrace kindness in their communities—online and in the world. With your help, we can empower young people to spread more kindness.
+            </div>
+            <a href="" class="button">learn more</a>
+        </div>
+        <div class="area1--img1"></div>
+        <div class="area1--img2"></div>
+    </section>
+
+    <section class="area2">
+        <div class="area2--content">
+            <div class="bar"></div>
+            <h2>Introducing Vanilla Sweet Cream Cold Brew—Sweet, Creamy, Cold, Bold.</h2>
+            <div class="area2--text">
+                Just before serving, our slow-steeped custom blend Starbucks® Cold Brew Coffee is topped with a delicate float of house-made vanilla sweet cream that cascades throughout the cup.
+            </div>
+            <a href="" class="button">learn more</a>
+        </div>
+        <div class="area2--img1"></div>
+        <div class="area2--img2"></div>
+    </section>
+
+    
+    <section class="area3">
+        <div class="area3--content">
+            <h2>The New Ultra Caramel <br/>Frappuccino Is Here!</h2>
+            <div class="area3--text">
+                Congrats on doing that thing! This calls for caramel. Lots of it. With cold brew whipped cream. The new Ultra Caramel Frappuccino is here!
+            </div>
+            <a href="" class="button">learn more</a>
+        </div>
+        <div class="area3--img1"></div>
+    </section>
+
+    <section class="area4">
+        <div class="area4--content">
+            <div class="bar"></div>
+            <h2>Kindness Starts<br/> With A Cup</h2>
+            <div class="area4--text">
+                Introducing the Cups of Kindness collection: four very special drinks as delicious and refreshing as they are beautiful. Two new creations, Matcha Lemonade and Violet Drink, will join Pink Drink and Ombré Pink Drink as instant summer favorites.
+            </div>
+            <a href="" class="button">learn more</a>
+        </div>
+        <div class="area4--img1"></div>
+    </section>
+
+    <section class="area5"></section>
+
+    <footer>
+        Layout criado por Marcos Felipe Mira <br/>
+        Créditos do layout para <a href="https://starbucks.nicepage.io/" target="_blank">Nicepage</a>
+    </footer>
+</body>
+</html>
