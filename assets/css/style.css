@@ -127,10 +127,11 @@ input[type="text"]{
     width: 16px;
 }
 
-
+.header--menu{
+    margin-left: 15px;
+}
 .header--menu i{
     font-size: 25px;
-    margin-left: 30px;
     cursor: pointer;
     color: #000000;
 }
@@ -308,6 +309,11 @@ footer a:hover{
         padding-left: 20px;
         padding-right: 20px;
     }
+    
+    h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
 
     .banner--images{
         flex-direction: column;
@@ -330,6 +336,10 @@ footer a:hover{
     .area3{
         grid-template-columns: 3fr 2fr;
     }
+
+    .area4{
+        grid-template-columns: 3fr 2fr;
+    }
 }
 
 @media(max-width:425px){
@@ -339,7 +349,7 @@ footer a:hover{
     }
 
     h1{
-        font-size: 50px;
+        font-size: 40px;
         line-height: 60px;
     }
 
